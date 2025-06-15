@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página HTML5</h1>
+        <p>Una demostración de etiquetas semánticas y estructura web</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#articulos">Artículos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Sobre HTML5</h2>
+            <p>HTML5 es la <strong>quinta versión principal</strong> del lenguaje HTML. Introduce elementos semánticos que ayudan a definir la estructura de una página web.</p>
+            <p>Algunas características importantes incluyen: <em>etiquetas semánticas, soporte multimedia nativo, y APIs para aplicaciones web complejas</em>.</p>
+            
+            <img src="image-1.jpg" alt="Desarrollo web con HTML5" width="600">
+        </section>
+
+        <section id="multimedia">
+            <h3>Multimedia en HTML5</h3>
+            <p>HTML5 permite incluir video y audio directamente sin necesidad de plugins:</p>
+            
+            <video controls width="600">
+                <source src="video-2.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+
+        <section id="listas">
+            <h3>Listas en HTML</h3>
+            <div class="list-container">
+                <div>
+                    <h4>Lista Ordenada (Pasos para aprender HTML)</h4>
+                    <ol>
+                        <li>Aprender la estructura básica</li>
+                        <li>Entender las etiquetas semánticas</li>
+                        <li>Practicar con proyectos pequeños</li>
+                        <li>Crear páginas completas</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4>Lista No Ordenada (Recursos útiles)</h4>
+                    <ul>
+                        <li>Documentación MDN</li>
+                        <li>Tutoriales en YouTube</li>
+                        <li>Foros de desarrollo web</li>
+                        <li>Ejemplos en GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="tabla">
+            <h3>Tabla de Navegadores Web</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Navegador</th>
+                        <th>Soporte HTML5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Google Chrome</td>
+                        <td>Excelente</td>
+                    </tr>
+                    <tr>
+                        <td>Mozilla Firefox</td>
+                        <td>Muy Bueno</td>
+                    </tr>
+                    <tr>
+                        <td>Safari</td>
+                        <td>Bueno</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Edge</td>
+                        <td>Excelente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article id="articulos">
+            <h2>Artículo: Importancia del HTML Semántico</h2>
+            <p>El HTML semántico es crucial para la accesibilidad y el SEO. Las etiquetas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, y <code>&lt;footer&gt;</code> ayudan a los motores de búsqueda y lectores de pantalla a entender la estructura de tu página.</p>
+            <p>Puedes leer más sobre esto en <a href="https://developer.mozilla.org/es/docs/Glossary/Semantics" target="_blank">MDN Web Docs</a>.</p>
+        </article>
+
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mi Página HTML5. Todos los derechos reservados.</p>
+        <p>Creado como parte de un proyecto educativo.</p>
+    </footer>
+</body>
+</html>
